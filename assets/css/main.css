@@ -921,3 +921,45 @@ h6,
         background-size: 350px 25px, cover !important;
     }
 }
+/* STCM - Logotipo corporativo vectorial */
+
+.site-header .site-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 10px 0;
+}
+
+.site-brand-logo {
+    display: block;
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Laptops */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .site-brand-logo {
+        width: 340px;
+    }
+}
+
+/* Tablets */
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .site-brand-logo {
+        width: 360px;
+    }
+}
+
+/* Celulares */
+
+@media (max-width: 575.98px) {
+    .site-brand-logo {
+        width: min(290px, calc(100vw - 96px));
+    }
+}
