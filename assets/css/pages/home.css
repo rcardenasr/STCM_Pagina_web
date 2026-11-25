@@ -36,3 +36,121 @@
     #header-carousel .carousel-control-next {
         z-index: 3;
     }
+
+/* ========================================
+   STCM - PORTADA LUMINOSA V16
+   Calificación de salas limpias
+   ======================================== */
+
+/* Eliminar el oscurecimiento anterior */
+
+#header-carousel .hero-salas-limpias::after {
+    background: none;
+}
+
+/* Composición de la fotografía */
+
+#header-carousel .hero-salas-limpias > img {
+    object-fit: cover;
+    object-position: center 50%;
+}
+
+/* Transición luminosa hacia la fotografía */
+
+#header-carousel .hero-salas-limpias .carousel-caption {
+    background: linear-gradient(
+        90deg,
+        #EAF3F7 0%,
+        rgba(234,243,247,.97) 18%,
+        rgba(234,243,247,.90) 30%,
+        rgba(234,243,247,.45) 44%,
+        rgba(234,243,247,0) 63%
+    );
+}
+
+/* Ancho del bloque de texto */
+
+#header-carousel .hero-salas-limpias .col-lg-10 {
+    max-width: 600px;
+}
+
+/* Subtítulo superior */
+
+#header-carousel .hero-salas-limpias p.text-uppercase {
+    color: #00788D !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Línea decorativa naranja */
+
+#header-carousel .hero-salas-limpias p.text-uppercase::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin-top: 17px;
+    background: #EB7614;
+    border-radius: 2px;
+}
+
+/* Título principal */
+
+#header-carousel .hero-salas-limpias h1 {
+    color: #042B40 !important;
+    font-size: clamp(32px, 3vw, 48px);
+    font-weight: 700 !important;
+    line-height: 1.16;
+}
+
+/* Descripción del servicio */
+
+#header-carousel .hero-salas-limpias p:not(.text-uppercase) {
+    color: #173D50 !important;
+    font-size: 17px !important;
+    line-height: 1.65;
+    max-width: 470px !important;
+}
+
+/* Botón naranja mineral */
+
+#header-carousel .hero-salas-limpias .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(
+        105deg, #BE4908, #EB7614
+    );
+    color: #FFFFFF !important;
+    border-radius: 9px;
+    padding: 14px 25px !important;
+    font-weight: 600;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 767.98px) {
+
+    #header-carousel .hero-salas-limpias {
+        min-height: 560px;
+    }
+
+    #header-carousel .hero-salas-limpias > img {
+        object-position: 70% center;
+    }
+
+    #header-carousel .hero-salas-limpias .carousel-caption {
+        background: linear-gradient(
+            90deg,
+            rgba(234,243,247,.98),
+            rgba(234,243,247,.92) 60%,
+            rgba(234,243,247,.65)
+        );
+    }
+
+    #header-carousel .hero-salas-limpias h1 {
+        font-size: 30px;
+    }
+
+}
