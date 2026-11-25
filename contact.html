@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>STCM</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Identidad visual: icono mostrado por el navegador -->
+    <link href="assets/images/brand/logo.png" rel="icon">
+
+    <!-- Tipografías externas utilizadas por el sitio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos externos de Font Awesome y Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos de animaciones y carruseles de terceros -->
+    <link href="assets/vendor/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Base visual de Bootstrap personalizada para STCM -->
+    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos globales compartidos por todas las páginas -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Cargador inicial: visible mientras termina de cargar la página -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Fin del cargador inicial -->
+
+
+    <!-- Navegación principal: marca, enlaces y llamada a cotización -->
+    <nav class="navbar navbar-expand-lg navbar-light site-header sticky-top">
+        <div class="site-header-inner">
+            <a href="index.html" class="navbar-brand site-brand" aria-label="STCM - Inicio">
+                <span class="site-brand-primary">
+                    <img src="assets/images/brand/logo.png" alt="" width="48" height="48">
+                    <span class="site-brand-name">STCM</span>
+                </span>
+                <span class="site-brand-tagline">Servicios Tecnológicos y Consultoría<br>Multisectorial Perú S.A.C</span>
+            </a>
+
+            <button type="button" class="navbar-toggler site-menu-toggle" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse site-navigation" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
+                <a href="service.html" class="nav-item nav-link">Servicios</a>
+                <a href="contact.html" class="nav-item nav-link active" aria-current="page">Solicitar cotización</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la navegación principal -->
+
+
+    <!-- Encabezado interior: título y contexto de la página -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white animated slideInRight">Contactanos</h1>
+</div>
+    </div>
+    <!-- Fin del encabezado interior -->
+
+
+    <!-- Información y formulario de contacto -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            
+            <div class="row g-5">
+                <!-- Formulario de Contacto -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Solicitar Cotización</p>
+                    <h1 class="display-5 mb-4">Completa el Formulario</h1>
+                    <form id="contactForm" action="https://formsubmit.co/administracion@stcmperusac.pe" method="POST">
+                        <!-- Campos ocultos para FormSubmit -->
+                        <input type="hidden" name="_cc" value="administracion2@stcmperusac.pe">
+                        <input type="hidden" name="_subject" value="Nueva solicitud de cotización - Sitio Web">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nombres" name="Nombres y Apellidos" placeholder="Nombres y Apellidos" required>
+                                    <label for="nombres">Nombres y Apellidos</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="empresa" name="Empresa" placeholder="Empresa" required>
+                                    <label for="empresa">Empresa</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="rubro" name="Rubro de la Empresa" placeholder="Rubro de la Empresa" required>
+                                    <label for="rubro">Rubro de la Empresa</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="ruc" name="RUC" placeholder="RUC" required>
+                                    <label for="ruc">RUC</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="correo" name="Correo" placeholder="Correo" required>
+                                    <label for="correo">Correo</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="telefono" name="Teléfono" placeholder="Teléfono" required>
+                                    <label for="telefono">Teléfono</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Cuéntanos tu consulta o proyecto" id="mensaje" name="Mensaje"
+                                        style="height: 150px" required></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">SOLICITAR COTIZACIÓN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Información de Contacto -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Información</p>
+                    <h1 class="display-5 mb-4">¿En qué te podemos ayudar?</h1>
+                    <p class="mb-4">En STCM ofrecemos soluciones integrales en servicios tecnológicos y consultoría multisectorial. Contamos con un equipo de profesionales especializados listos para atender tus necesidades en Power & Energy, Metrología, Consultoría, Análisis de datos y Venta de instrumentos de laboratorio.</p>
+                    
+                    <div class="row g-4">
+                        <!-- Dirección -->
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa fa-map-marker-alt text-white fa-lg"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Dirección</h6>
+                                    <span>Jr. San Juan Bautista, San Martin de Porres, Lima</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa fa-envelope text-white fa-lg"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Email</h6>
+                                    <div class="mb-1">
+                                        <a href="mailto:administracion@stcmperusac.pe" class="text-decoration-none text-dark">administracion@stcmperusac.pe</a>
+                                    </div>
+                                    <div>
+                                        <a href="mailto:administracion2@stcmperusac.pe" class="text-decoration-none text-dark">administracion2@stcmperusac.pe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Teléfono y WhatsApp -->
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa fa-phone-alt text-white fa-lg"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Teléfono y WhatsApp</h6>
+                                    <div class="d-flex flex-wrap align-items-center gap-2">
+                                        <a href="tel:+51934506732" class="text-decoration-none text-dark fw-bold me-2">+51 934 506 732</a>
+                                        <a href="https://wa.me/51934506732" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success py-1 px-2">
+                                            <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Horarios -->
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa fa-clock text-white fa-lg"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-1">Horarios de Atención</h6>
+                                    <span>Lunes - Viernes: 9:00 AM - 6:00 PM<br>
+                                    Sábado: 9:00 AM - 1:00 PM<br>
+                                    Domingo: Cerrado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <iframe class="w-100"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3902.4320453668606!2d-77.05560037406009!3d-12.013749088220539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1786639831020!5m2!1ses!2spe"
+                        width="600" height="450" style="min-height: 450px; border: 0;"
+                        loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Fin de la sección de contacto -->
+
+
+    
+
+    <!-- Pie de página: contacto, navegación y horarios -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="text-white mb-4">Nuestra Oficina</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jr. San Juan Bautista, SMP, Lima</p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i><a href="tel:+51934506732" class="text-light text-decoration-none">+51 934 506 732</a>
+                        <span class="mx-2 text-white-50">|</span>
+                        <a href="https://wa.me/51934506732" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">
+                            <i class="fab fa-whatsapp text-success me-1"></i>WhatsApp
+                        </a>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:administracion@stcmperusac.pe" class="text-light text-decoration-none">administracion@stcmperusac.pe</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:administracion2@stcmperusac.pe" class="text-light text-decoration-none">administracion2@stcmperusac.pe</a></p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="text-white mb-4">Horarios de atención</h5>
+                    <p class="mb-1">Lunes - Viernes</p>
+                    <h6 class="text-light">08:00 am - 06:00 pm</h6>
+                    <p class="mb-1">Sábado</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Domingo</p>
+                    <h6 class="text-light">Cerrado</h6>
+                </div>
+</div>
+        </div>
+    </div>
+    <!-- Fin del pie de página -->
+
+
+    <!-- Créditos legales y de la plantilla -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="index.html">STCM</a>, All Right Reserved.
+            </p>
+<p class="mb-0">Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed
+                By: <a href="https://themewagon.com">ThemeWagon</a> </p>
+        </div>
+    </div>
+    <!-- Fin de créditos -->
+
+
+    <!-- Acción flotante para regresar al inicio -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- Dependencias JavaScript de terceros -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+
+    <!-- Comportamiento compartido del sitio -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Comportamiento exclusivo del formulario de contacto -->
+    <script src="assets/js/pages/contact.js"></script>
+</body>
+
+</html>
