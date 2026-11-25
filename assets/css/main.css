@@ -829,7 +829,11 @@ h6,
 }
 
 /* Adaptación para laptops */
-
+@media (min-width: 992px) {
+    .site-navigation .nav-link[href="contact.html"] {
+        margin-left: 16px;
+    }
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .site-header-inner {
         padding: 0 16px;
