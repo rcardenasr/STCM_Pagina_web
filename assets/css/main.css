@@ -793,3 +793,55 @@ h6,
         display: none;
     }
 }
+/* STCM - Decoración del encabezado */
+
+.site-header {
+    background:
+        radial-gradient(
+            ellipse 190px 65px at 105% -15px,
+            #FF9200 98%, transparent 100%
+        ),
+        radial-gradient(
+            ellipse 420px 65px at 88% -36px,
+            #00566D 98%, transparent 100%
+        ),
+        radial-gradient(
+            ellipse 650px 85px at 80% -55px,
+            #004256 98%, transparent 100%
+        ),
+        linear-gradient(
+            110deg, #042B40, #06384C
+        ) !important;
+}
+
+/* Flecha del botón de cotización */
+
+.site-navigation .nav-link[href="contact.html"]::after {
+    content: " \2192";
+    margin-left: 8px;
+    font-size: 1.15rem;
+}
+
+/* Refinamiento del menú */
+
+.site-navigation .nav-link {
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    .site-navigation .nav-link.active:not([href="contact.html"]) {
+        position: relative;
+        box-shadow: none;
+    }
+
+    .site-navigation .nav-link.active:not([href="contact.html"])::after {
+        content: "";
+        position: absolute;
+        bottom: 13px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--primary);
+    }
+}
