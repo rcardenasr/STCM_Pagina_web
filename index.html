@@ -46,30 +46,65 @@
 
 
     <!-- Navegación principal: marca, enlaces y llamada a cotización -->
-    <nav class="navbar navbar-expand-lg navbar-light site-header sticky-top">
-        <div class="site-header-inner">
-            <a href="index.html" class="navbar-brand site-brand" aria-label="STCM - Inicio">
-                <img src="assets/images/brand/stcm-logo-header.svg"
-                     class="site-brand-logo"
-                     alt="STCM - Servicios Tecnológicos y Consultoría Multisectorial Perú S.A.C.">
+<header class="stcm-header">
+
+    <img class="stcm-ribbon"
+         src="assets/images/brand/STCM_cinta_transparente.svg"
+         alt="">
+
+    <div class="stcm-inner">
+
+        <a href="index.html" class="stcm-brand">
+
+            <img class="stcm-symbol"
+                 src="assets/images/brand/STCM_isotipo.svg"
+                 alt="">
+
+            <span class="stcm-word">STCM</span>
+
+            <span class="stcm-description">
+                <span>SERVICIOS TECNOLÓGICOS Y CONSULTORÍA</span>
+                <span>MULTISECTORIAL PERÚ S.A.C.</span>
+            </span>
+
+        </a>
+
+        <button class="stcm-toggle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#stcmMenu"
+                aria-controls="stcmMenu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav class="stcm-menu collapse" id="stcmMenu">
+
+            <a href="index.html" class="active">Inicio</a>
+
+            <a href="about.html">Sobre nosotros</a>
+
+            <a href="service.html">Servicios</a>
+
+            <a href="contact.html" class="stcm-cta">
+                <span>Solicitar cotización</span>
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M3 12h17m-6-6 6 6-6 6"/>
+                </svg>
             </a>
 
-            <button type="button" class="navbar-toggler site-menu-toggle" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                aria-label="Abrir menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        </nav>
 
-            <div class="collapse navbar-collapse site-navigation" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                <a href="index.html" class="nav-item nav-link active" aria-current="page">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="contact.html" class="nav-item nav-link">Solicitar cotización</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    </div>
+
+</header>
     <!-- Fin de la navegación principal -->
 
 
