@@ -2,10 +2,11 @@
 
 /********** ESTILOS GLOBALES DEL SITIO **********/
 :root {
-    --primary: #ff8002;
-    --secondary: #2881C8;
-    --light: #F5F5F5;
-    --dark: #2881C8;
+    --primary: #F86800;
+    --secondary: #042B40;
+    --light: #EAF3F7;
+    --dark: #042B40;
+    --accent: #008B96;
 }
 
 html,
@@ -120,7 +121,7 @@ p.fw-medium.text-uppercase,
 }
 
 .bg-dark {
-    background-color: #1a1f24 !important;
+    background-color: var(--dark) !important;
 }
 
 .stcm-nav-name {
