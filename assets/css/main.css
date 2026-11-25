@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700&display=swap');
 
 /********** ESTILOS GLOBALES DEL SITIO **********/
 :root {
@@ -962,4 +962,71 @@ h6,
     .site-brand-logo {
         width: min(290px, calc(100vw - 96px));
     }
+}
+/* ========================================
+   STCM - IDENTIDAD TIPOGRÁFICA
+   ======================================== */
+
+:root {
+    --font-body: 'Inter', Arial, sans-serif;
+    --font-heading: 'Manrope', Arial, sans-serif;
+}
+
+/* Texto general */
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+/* Títulos */
+
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3,
+.display-4, .display-5, .display-6 {
+    font-family: var(--font-heading);
+    font-weight: 700 !important;
+    letter-spacing: -.035em;
+}
+
+/* Párrafos */
+
+p, li {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+/* Menú superior */
+
+.site-navigation .nav-link {
+    font-family: var(--font-body);
+    font-size: .92rem;
+    font-weight: 500;
+    letter-spacing: -.015em;
+}
+
+/* Botones */
+
+.btn,
+.site-navigation .nav-link[href="contact.html"] {
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: -.015em;
+}
+
+/* Texto de portada */
+
+#header-carousel .carousel-caption p:not(.text-uppercase) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+#header-carousel .carousel-caption p.text-uppercase {
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .10em;
 }
