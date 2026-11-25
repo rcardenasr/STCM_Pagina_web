@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 /********** ESTILOS GLOBALES DEL SITIO **********/
 :root {
     --primary: #F86800;
@@ -1124,11 +1123,11 @@ p, li {
 }
 
 .stcm-description span {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 13px;
-    font-weight: 700;
-    letter-spacing: .45px;
-    line-height: 1.22;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 1.35;
     color: #FFFFFF;
 }
 
