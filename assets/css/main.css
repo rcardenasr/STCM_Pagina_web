@@ -687,164 +687,233 @@ h6,
     margin: 0 auto;
 }
 /* ========================================
-   STCM - NUEVO ENCABEZADO CORPORATIVO
+   STCM - ENCABEZADO CORPORATIVO
+   DISEÑO A
    ======================================== */
 
 .site-header {
-    background: linear-gradient(
-        110deg, #042B40, #06384C
-    ) !important;
-    border-bottom: 1px solid rgba(255,255,255,.12);
+    background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 40'%3E%3Cpath fill='%23004256' d='M0 0 C220 0 370 28 580 12 Q720 0 800 25 V0Z'/%3E%3Cpath fill='%2300566D' d='M310 0 C480 22 650 0 800 20 V0Z'/%3E%3Cpath fill='%23F88A00' d='M730 0 Q775 5 800 20 V0Z'/%3E%3C/svg%3E")
+        no-repeat top right / 800px 40px,
+        linear-gradient(110deg, #042B40, #06384C)
+        !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    box-shadow: none;
 }
 
-/* Eliminar fondo blanco del logotipo */
+.site-header-inner {
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 28px;
+    min-height: 85px;
+}
+
+/* Identidad corporativa */
+
 .site-header .site-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 1 auto;
+    width: auto;
+    min-height: 85px;
+    gap: 0;
+    margin: 0;
+    padding: 10px 0;
     background: transparent !important;
 }
 
-/* Eliminar la franja naranja inclinada */
 .site-header .site-brand::after {
     display: none !important;
 }
 
-/* Nombre de la empresa */
+.site-brand-primary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-brand-primary img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
 .site-brand-name {
     color: #FFFFFF !important;
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: .5px;
 }
 
-/* Razón social */
 .site-brand-tagline {
     color: #E6F1F6 !important;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: .73rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    white-space: nowrap;
+    margin: 0 0 0 18px;
+    padding-left: 18px;
+    border-left: 1px solid rgba(255,255,255,.5);
 }
 
-/* Menú de navegación */
+/* Navegación */
+
+.site-navigation {
+    padding: 0 0 0 24px;
+}
+
+.site-navigation .navbar-nav {
+    gap: 28px;
+    align-items: center;
+}
+
 .site-navigation .nav-link {
-    font-size: 1rem;
+    color: #FFFFFF !important;
+    font-size: .95rem;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color .2s ease;
+}
+
+.site-navigation .nav-link:hover {
+    color: #FFAA65 !important;
+}
+
+.site-navigation .nav-link.active {
+    position: relative;
+    color: #FFFFFF !important;
+    box-shadow: none;
+}
+
+/* Indicador de página activa */
+
+.site-navigation .nav-link.active:not([href="contact.html"])::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: #F86800;
 }
 
 /* Botón de cotización */
+
 .site-navigation .nav-link[href="contact.html"] {
-    background: #F86800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 18px;
     color: #FFFFFF !important;
-    padding: 13px 22px;
-    border-radius: 9px;
-    transition: background .25s ease;
+    background: #F86800;
+    border-radius: 7px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.site-navigation .nav-link[href="contact.html"]::after {
+    content: "\2192";
+    font-size: 1.05rem;
 }
 
 .site-navigation .nav-link[href="contact.html"]:hover {
     background: #D95700;
 }
 
-/* Indicador de página activa */
-@media (min-width: 992px) {
-    .site-navigation .nav-link.active:not([href="contact.html"]) {
-        color: #FFFFFF !important;
-        box-shadow: inset 0 -3px #F86800;
-    }
-}
-/* STCM - Refinamiento de marca */
+/* Adaptación para laptops */
 
-.site-header .site-brand {
-    gap: 0;
-    padding: 12px 30px;
-    min-height: 90px;
-    margin: 0;
-}
-
-.site-brand-primary img {
-    width: 48px;
-    height: 48px;
-}
-
-.site-brand-name {
-    font-size: 2.5rem;
-    letter-spacing: .5px;
-}
-
-.site-brand-tagline {
-    margin: 0 0 0 20px;
-    padding-left: 20px;
-    font-size: .78rem;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 600;
-    line-height: 1.4;
-    white-space: nowrap;
-    border-left: 1px solid rgba(255,255,255,.55);
-}
-
-@media (max-width: 767.98px) {
-    .site-header .site-brand {
-        flex: 0 1 auto;
-        width: auto;
-        min-height: 68px;
-        padding: 10px 16px;
-    }
-
-    .site-brand-primary img {
-        width: 34px;
-        height: 34px;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .site-header-inner {
+        padding: 0 16px;
     }
 
     .site-brand-name {
-        font-size: 1.8rem;
+        font-size: 1.85rem;
+    }
+
+    .site-brand-primary img {
+        width: 36px;
+        height: 36px;
     }
 
     .site-brand-tagline {
+        font-size: .62rem;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .site-navigation .navbar-nav {
+        gap: 14px;
+    }
+
+    .site-navigation .nav-link {
+        font-size: .85rem;
+    }
+}
+
+/* Adaptación para tablets y celulares */
+
+@media (max-width: 991.98px) {
+    .site-header-inner {
+        min-height: 72px;
+        padding: 0 16px;
+    }
+
+    .site-header .site-brand {
+        min-height: 72px;
+    }
+
+    .site-brand-name {
+        font-size: 1.9rem;
+    }
+
+    .site-brand-primary img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .site-navigation {
+        padding: 12px 0 18px;
+        background: transparent;
+    }
+
+    .site-navigation .navbar-nav {
+        gap: 8px;
+        align-items: stretch;
+    }
+
+    .site-navigation .nav-link {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .site-navigation .nav-link.active::after {
         display: none;
     }
-}
-/* STCM - Decoración del encabezado */
 
-.site-header {
-    background:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 65'%3E%3Cpath fill='%23004256' d='M0 0 C220 0 320 45 500 24 S700 9 800 40 V0Z'/%3E%3Cpath fill='%2300566D' d='M260 0 C460 34 610 0 800 28 V0Z'/%3E%3Cpath fill='%23F88A00' d='M680 0 C730 9 775 18 800 43 V0Z'/%3E%3C/svg%3E")
-        no-repeat top right / 800px 65px,
-        linear-gradient(110deg, #042B40, #06384C)
-        !important;
-
-    border-bottom: 1px solid rgba(255,255,255,.1);
-}
-
-/* Flecha del botón de cotización */
-
-.site-navigation .nav-link[href="contact.html"]::after {
-    content: " \2192";
-    margin-left: 8px;
-    font-size: 1.15rem;
-}
-
-/* Refinamiento del menú */
-
-.site-navigation .nav-link {
-    font-weight: 600;
-}
-
-@media (min-width: 992px) {
-    .site-navigation .nav-link.active:not([href="contact.html"]) {
-        position: relative;
-        box-shadow: none;
-    }
-
-    .site-navigation .nav-link.active:not([href="contact.html"])::after {
-        content: "";
-        position: absolute;
-        bottom: 13px;
-        left: 0;
-        right: 0;
-        height: 3px;
-        border-radius: 2px;
-        background: var(--primary);
+    .site-menu-toggle {
+        margin-right: 0;
     }
 }
-/* STCM - Acabado del botón */
 
-.site-navigation .nav-link[href="contact.html"] {
-    padding: 11px 20px;
-    border-radius: 8px;
-    font-size: .95rem;
-}
+@media (max-width: 575.98px) {
+    .site-brand-tagline {
+        display: none;
+    }
 
-.site-navigation .nav-link[href="contact.html"]::after {
-    margin-left: 6px;
-    font-size: 1.1rem;
+    .site-brand-name {
+        font-size: 1.7rem;
+    }
+
+    .site-header {
+        background-size: 350px 25px, cover !important;
+    }
 }
