@@ -797,21 +797,12 @@ h6,
 
 .site-header {
     background:
-        radial-gradient(
-            ellipse 190px 65px at 105% -15px,
-            #FF9200 98%, transparent 100%
-        ),
-        radial-gradient(
-            ellipse 420px 65px at 88% -36px,
-            #00566D 98%, transparent 100%
-        ),
-        radial-gradient(
-            ellipse 650px 85px at 80% -55px,
-            #004256 98%, transparent 100%
-        ),
-        linear-gradient(
-            110deg, #042B40, #06384C
-        ) !important;
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 65'%3E%3Cpath fill='%23004256' d='M0 0 C220 0 320 45 500 24 S700 9 800 40 V0Z'/%3E%3Cpath fill='%2300566D' d='M260 0 C460 34 610 0 800 28 V0Z'/%3E%3Cpath fill='%23F88A00' d='M680 0 C730 9 775 18 800 43 V0Z'/%3E%3C/svg%3E")
+        no-repeat top right / 800px 65px,
+        linear-gradient(110deg, #042B40, #06384C)
+        !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
 /* Flecha del botón de cotización */
@@ -844,4 +835,16 @@ h6,
         border-radius: 2px;
         background: var(--primary);
     }
+}
+/* STCM - Acabado del botón */
+
+.site-navigation .nav-link[href="contact.html"] {
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: .95rem;
+}
+
+.site-navigation .nav-link[href="contact.html"]::after {
+    margin-left: 6px;
+    font-size: 1.1rem;
 }
