@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="300" viewBox="60 0 260 100" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Cinta decorativa STCM turquesa y naranja</title>
+  <defs>
+    <linearGradient id="turquesa" gradientUnits="userSpaceOnUse" x1="65" y1="99" x2="239" y2="64">
+      <stop stop-color="#00658F"/>
+      <stop offset=".48" stop-color="#007EA1"/>
+      <stop offset=".82" stop-color="#00A7BE"/>
+      <stop offset="1" stop-color="#36D5DA"/>
+    </linearGradient>
+    <linearGradient id="naranja" gradientUnits="userSpaceOnUse" x1="237" y1="65" x2="320" y2="9">
+      <stop stop-color="#FFBC20"/>
+      <stop offset=".33" stop-color="#FFA600"/>
+      <stop offset=".76" stop-color="#F47B00"/>
+      <stop offset="1" stop-color="#C94B00"/>
+    </linearGradient>
+    <linearGradient id="filo" gradientUnits="userSpaceOnUse" x1="65" y1="99" x2="239" y2="64">
+      <stop stop-color="#19A8D0" stop-opacity="0"/>
+      <stop offset=".65" stop-color="#31C8E0" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#9BEAF0" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 100 C117 88 180 78 238 64 C216 77 184 90 151 100 Z" fill="url(#turquesa)"/>
+  <path d="M60 100 C117 88 180 78 238 64" stroke="url(#filo)" stroke-width=".45"/>
+  <path d="M232 67 C269 48 300 24 320 0 L320 27 C295 45 267 58 232 67 Z" fill="url(#naranja)"/>
+  <path d="M232 67 C267 58 295 45 320 27" stroke="#FFB627" stroke-opacity=".7" stroke-width=".45"/>
+</svg>

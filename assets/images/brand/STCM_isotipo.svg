@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 19 156 155" role="img" aria-labelledby="title desc">
+  <title id="title">Isotipo STCM</title>
+  <desc id="desc">Isotipo STCM en blanco, turquesa y naranja, sin texto y con fondo transparente.</desc>
+  <defs>
+    <linearGradient id="tealTop" x1="0" y1="1" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop stop-color="#00B5C8"/><stop offset="1" stop-color="#00788E"/></linearGradient>
+    <linearGradient id="tealBottom" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00657C"/><stop offset="1" stop-color="#00B6C5"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFA000"/><stop offset="1" stop-color="#F47700"/></linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F7F8"/></linearGradient>
+  </defs>
+  <!-- Isotipo: cuatro módulos redondeados. -->
+  <g>
+    <path fill="url(#tealTop)" d="M37 94 Q29 94 29 86 V69 Q29 60 38 60 H65 Q68 60 68 56 V32 Q68 23 77 23 H92 Q101 23 101 32 V85 Q101 94 92 94 Z"/>
+    <path fill="url(#orange)" d="M117 23 H167 Q177 23 177 33 V85 Q177 94 168 94 H152 Q143 94 143 85 V59 Q143 56 140 56 H117 Q108 56 108 47 V32 Q108 23 117 23 Z"/>
+    <path fill="url(#white)" d="M38 101 H92 Q101 101 101 110 V161 Q101 170 92 170 H76 Q67 170 67 161 V138 Q67 134 63 134 H38 Q29 134 29 125 V110 Q29 101 38 101 Z"/>
+    <path fill="url(#tealBottom)" d="M117 101 H168 Q177 101 177 110 V126 Q177 135 168 135 H143 Q140 135 140 138 V161 Q140 170 131 170 H117 Q108 170 108 161 V110 Q108 101 117 101 Z"/>
+  </g>
+</svg>
